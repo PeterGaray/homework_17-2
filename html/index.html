@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <head>
+        <title>About Me</title>
+            <link rel="stylesheet" type="text/css" href="../css/index.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Nav HTML-->
+<section class="navigation">
+    <div class="top">
+       <!-- Bootstrap Header -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+            <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+                </a>
+        <div class ="name" >Kevin Lugo</div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <a class="nav-link active" id="aboutme" href="#">About me</a>
+                    </li>
+                <li class="nav-item">
+              <a class="nav-link" id="projects" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+              <a class="nav-link" href="https://docs.google.com/document/d/1_xT4mtSbljqcW5Ntloy_-21v0QMP1bsRPOFa7tGdIFA/edit?usp=sharing">Resume</a>
+                </li>
+                <button type="button" class="btn btn-success">Hire me</button>
+          </ul>        
+        </nav>
+    </div>    
+</section>
+
+<section id="projectSection">
+    <div class="projects-grid">
+        <div class="projectPics"><a href="https://docs.google.com/presentation/d/17SZxgqcc9J8GyPwQ5azPS81o3lEp20_dcFI2wQPvBOU/edit?usp=sharing">
+            <p id="projectTitles">Routinely</p>
+            <img src="../images/routinely7.jpg" class="routinely"> </a>
+        </div>
+        <div class="projectPics"><a href="https://docs.google.com/presentation/d/18J_3hbnY8bd0M-CjZgJ-TEKa2t1PIHM5YtlbnJv_Wio/edit?usp=sharing">
+            <p id="projectTitles">California Department of Education</p>
+            <img src="../images/cde4.jpg"class="cde"></a> 
+        </div>
+        <div class="projectPics"><a href="https://docs.google.com/presentation/d/18X08UjzNHymV24dKPEIktdw9Ht5c7wBonexrPpAxAp0/edit?usp=sharing">
+            <p id="projectTitles">Harmony at Home</p>
+            <img src="../images/HaH3.jpg" class="hah"></a>
+        </div>
+    </div>
+</section>
+<!-- I am having trouble with this, the picture wont fit right with the other cards I built-->
+<section id="about">
+    <div class="about-grid">
+        <div class="picture">
+            <img src="../images/me.jpeg" class="me about-grid">
+                </div>
+         <div class="info">
+             <p id="bio"> I am a U.C. Berkeley graduate who discovered UX research and UX design while working at TiVo. 
+                 The research team there took me under their wing and allowed me to work on mulitple projects with them including focus groups, usability tests, and user interviews. 
+                 I decided that this work was what I truly liked and so I began my plunge into the world of UX.</p>
+                </div>
+        <div class="list1">
+            <h2> Social Media</h2>
+            <ol>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://www.tiwtter.com">Twitter</a></li>
+            </ol>
+                </div>
+        <div class="list2">
+            <h3> Skills</h3>
+            <ul>
+                <li><a href="https://www.facebook.com">HTML</a></li>
+                <li><a href="https://www.instagram.com">CSS</a></li>
+                <li><a href="https://www.twtter.com">FIGMA</a></li>
+            </ul>
+                </div>
+    </div>
+</section>
+<!-- Tried to re-do the previous section but with bootstrap. The photo doesn't rotate now and I don't know how to fix that either-->
+<div class="card-group">
+    <div class="card">
+      <img src="../images/me.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">I am a U.C. Berkeley graduate who discovered UX research and UX design while working at TiVo. 
+            The research team there took me under their wing and allowed me to work on mulitple projects with them including focus groups, usability tests, and user interviews. 
+            I decided that this work was what I truly liked and so I began my plunge into the world of UX.</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Social Media</h5>
+        <ol>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+        </ol>
+      </div>
+    </div>
+    <div class="card">
+           <div class="card-body">
+          <h5 class="card-title">Skills</h5>
+          <ul>
+            <li><a href="https://www.facebook.com">HTML</a></li>
+            <li><a href="https://www.instagram.com">CSS</a></li>
+            <li><a href="https://www.twtter.com">FIGMA</a></li>
+        </ul>
+        </div>
+  </div>
+    </body>
+</html>

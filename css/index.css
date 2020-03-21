@@ -1,0 +1,185 @@
+.nav{
+    padding: 20px;
+    font-size: 20px;
+}
+#projects{
+    color: red;
+    text-decoration: underline;
+}
+.nav-link{
+    color: black;
+}
+.name{
+    text-align: right;
+    font-size: 90px;
+    font-family: fantasy;
+    display: flex;
+    position: absolute;
+    color:black;
+    margin-bottom: 5px;
+}
+#projectTitles{
+    text-align: center;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.routinely{
+    grid-area: routinely;  
+    width: 600px;
+    border: 3px black solid;
+    cursor: pointer;
+}    
+.cde{
+    grid-area: cde;  
+    width: 600px;
+    border: 3px black solid;
+    cursor: pointer;
+ }
+.hah{
+    grid-area: hah;  
+    width: 600px;
+    border: 3px black solid;
+    cursor: pointer;
+ }
+.projects-grid {
+    margin: 20px;
+    margin-bottom: 100px;    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-template-areas: 
+    "routinely cde hah"
+    ;
+  }
+.about-grid{
+    margin: 0px auto;
+    display: grid;
+    min-height: 400px;
+    height: 300px;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px;
+    grid-template-areas:
+    "image info list1 list2";
+}
+#about{
+    margin: 20px;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;  */
+}
+/* I can get the image rotated and more or less aligned with the margin but the height is still too much and I cant seem to fix it, it is also not wide enough to match the other cards */
+.me{
+    grid-area: image;  
+    display: grid;
+    transform: translate(-12%) rotate(90deg); 
+    height: 40px; 
+    margin-top: 65px;
+}
+.info{
+    background-color: grey;
+    display: grid;
+    grid-area: info;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.list1{
+    background-color: green;
+    display: grid;
+    grid-area: list1;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+.list2{
+    background-color: darkturquoise;
+    display: grid;
+    grid-area: list2;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.card-image-top{
+    transform: rotate(90deg);
+}
+
+
+        /* Responsive */
+
+
+  @media screen and (max-width: 1001px) {
+    .name {
+      font-size: 70px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+  /* These cards are responsive but they do not fit right on the smaller sreen. They are too wide. Is it because I gave the images specific height/width measurements?*/
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px;
+        flex-flow: row wrap;
+        grid-template-areas: 
+        "routinely"
+        "cde"
+        "hah"
+        ;
+      }
+      #projectTitles{
+          font-size: 20px;
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px;
+        flex-flow: row wrap;
+        grid-template-areas: 
+        "image"
+        "info"
+        "list1"
+        "list2"
+        ;
+      }
+    }
+
+  @media only screen and (max-width: 780px) {
+    
+    /* I dont like how this name reacts responsively. It is clunky and ends up on the right hand side */
+    .name { 
+      position: static; 
+      font-size: 30px;
+      text-align: left;
+        }
+    #projectTitles{
+        font-size: 24px;
+        }
+    }
+
+    
+      /* @media only screen and (max-width: 1000px) {
+    #navigation { 
+      display: none;
+    }
+    .icons { 
+      margin-left: auto;
+    }
+  } */
+
+   
+    /* #heroGrid { 
+      grid-template-areas:
+      "featuredProduct featuredProduct"
+      "secondaryProduct CTA";
+    }
+     */
